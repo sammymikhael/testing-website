@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Plunge Bath Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cold Plunge Bath Store</h1>
+    </header>
+
+    <div class="container">
+        <img class="product-image" src="https://example.com/your-image-url.jpg" alt="Cold Plunge Bath">
+
+        <div class="product-details">
+            <h2>Product Description</h2>
+            <p>Describe the features and benefits of the cold plunge bath.</p>
+
+            <h3>Price: $XXX</h3>
+
+            <h3>Specifications:</h3>
+            <ul>
+                <li>Multiple Layered Insulation</li>
+                <!-- Add more specifications here -->
+            </ul>
+
+            <button onclick="buyNow()">Buy Now</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
