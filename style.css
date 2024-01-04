@@ -25,8 +25,13 @@ header {
     margin-top: 40px;
 }
 
-.product-image img {
-    max-width: 100%;
+.product-media {
+    width: 50%; /* Adjust the width as needed */
+    overflow: hidden; /* Ensure video stays within container */
+}
+
+.product-media video {
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
