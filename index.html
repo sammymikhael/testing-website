@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <h1>Cold Plunge Bath Store</h1>
+            <h1 class="logo">Cold Plunge Bath Store</h1>
         </div>
     </header>
 
@@ -17,31 +17,33 @@
         <section class="product-details">
             <div class="product-media">
                 <!-- Replace 'your-video-url.mp4' with the actual URL of your video file -->
-                <video controls width="80%" height="auto">
-                    <source src="//cloud.video.taobao.com/play/u/2153292369/p/1/e/6/t/10300/434594980089.mp4" type="video/mp4">
+                <video controls width="100%" height="auto">
+                    <source src= src="//cloud.video.taobao.com/play/u/2153292369/p/1/e/6/t/10300/434594980089.mp4 type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
 
             <div class="product-info">
-                <h2>Product Description</h2>
-                <p>Experience the ultimate in relaxation with our Multiple Layered Insulated Cold Plunge Bath. Featuring cutting-edge technology and sleek design, this plunge bath is perfect for rejuvenating your body and mind.</p>
+                <h2 class="product-title">Multiple Layered Insulated Cold Plunge Bath</h2>
+                <p class="product-description">Indulge in the ultimate relaxation with our state-of-the-art cold plunge bath. The perfect blend of innovation and elegance.</p>
 
-                <h3>Price: $XXX</h3>
+                <div class="price-container">
+                    <span class="price">$XXX</span>
+                    <button class="buy-now-button" onclick="buyNow()">Buy Now</button>
+                </div>
 
-                <h3>Specifications:</h3>
-                <ul>
-                    <li>Multiple Layered Insulation</li>
-                    <li>Stainless Steel Construction</li>
-                    <li>Adjustable Temperature Settings</li>
-                    <!-- Add more specifications here -->
-                </ul>
-
-                <button onclick="buyNow()">Buy Now</button>
+                <div class="features">
+                    <h3 class="features-heading">Key Features:</h3>
+                    <ul class="features-list">
+                        <li>Multiple Layered Insulation</li>
+                        <li>Stainless Steel Construction</li>
+                        <li>Adjustable Temperature Settings</li>
+                        <!-- Add more features here -->
+                    </ul>
+                </div>
             </div>
         </section>
     </div>
 
     <script src="script.js"></script>
 </body>
-</html>
