@@ -2,11 +2,12 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-header {
-    background-color: #333;
+.header {
+    background-color: #1a1a1a;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -26,57 +27,99 @@ header {
 }
 
 .product-media {
-    width: 50%; /* Adjust the width as needed */
-    overflow: hidden; /* Ensure video stays within container */
+    width: 60%;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
 .product-media video {
-    width: 80%;
+    width: 88%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product-media:hover video {
+    transform: scale(1.1);
 }
 
 .product-info {
-    max-width: 600px;
+    width: 35%;
 }
 
-.product-info h2 {
+.product-title {
+    font-size: 28px;
+    margin-bottom: 10px;
     color: #333;
 }
 
-.product-info p {
-    color: #555;
-}
-
-.product-info h3 {
-    color: #333;
-    margin-top: 10px;
-}
-
-.product-info ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.product-info ul li {
-    color: #555;
-    margin-bottom: 5px;
-}
-
-button {
-    display: block;
-    width: 100%;
-    padding: 15px;
-    background-color: #333;
-    color: #fff;
+.product-description {
     font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    font-size: 24px;
+    color: #333;
+}
+
+.buy-now-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #e44d26;
+    color: #fff;
+    font-size: 18px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #555;
+.buy-now-button:hover {
+    background-color: #333;
+}
+
+.features {
+    margin-top: 20px;
+}
+
+.features-heading {
+    font-size: 20px;
+    color: #333;
+}
+
+.features-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features-list li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .product-details {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-media {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .product-info {
+        width: 100%;
+    }
 }
